@@ -110,7 +110,7 @@ while getopts ":o:d:h:f:p:e:i:j:raqnms" opt; do
 			fi;
 			;;
 		h|hostname)
-			if [ -z "$host" ]; then
+			if [ -z "$_host" ]; then
 				# if local it is socket
 				if [ "$OPTARG" != "local" ]; then
 					host='-h '$OPTARG;
